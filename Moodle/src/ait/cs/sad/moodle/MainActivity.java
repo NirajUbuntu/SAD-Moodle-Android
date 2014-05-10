@@ -52,6 +52,11 @@ public class MainActivity extends Activity {
 			public void onClick(View v) {
 				String username = et_username.getEditableText().toString();
 				String password = et_password.getEditableText().toString();
+				
+				//et_username.setText("parent1");
+				//et_password.setText("parent1");
+				//Intent i = new Intent(MainActivity.this, Student.class);
+				//startActivity(i);
 				new MyAsyncTask().execute();
 				
 			}
@@ -94,8 +99,8 @@ public class MainActivity extends Activity {
 
 		@Override
 		protected void onPreExecute() {
-			progressDialog = new ProgressDialog(MainActivity.this);
-			progressDialog.show();
+			/*progressDialog = new ProgressDialog(MainActivity.this);
+			progressDialog.show();*/
 			super.onPreExecute();
 		}
 

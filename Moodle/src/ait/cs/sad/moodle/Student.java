@@ -57,8 +57,8 @@ public class Student extends Activity {
 
 		@Override
 		protected void onPreExecute() {
-			progressDialog = new ProgressDialog(Student.this);
-			progressDialog.show();
+			/*progressDialog = new ProgressDialog(Student.this);
+			progressDialog.show();*/
 			super.onPreExecute();
 		}
 
